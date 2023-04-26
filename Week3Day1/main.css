@@ -12,13 +12,16 @@ h4 {
 
 }
 #nav {
-    float: right;
+    display: flex;
+    justify-content: end;
     margin-right: 20px;
     margin-top: 20px;
 }
 #header {
     background-color: rgb(245, 173, 39);
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
 #nav a {
     color: white;
@@ -26,13 +29,14 @@ h4 {
     margin-left: 15px;
 }
 #container {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .box {
     width: 320px;
     height: 550px;
     border: 2px solid rgb(245, 173, 39);
-    float: left;
     margin: 20px;
     position: relative;
     border-radius: 5px;
