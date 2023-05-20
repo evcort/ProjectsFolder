@@ -1,0 +1,157 @@
+html, body, h1, h2, div, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+    height: 2000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*TITLE QUESTION*/
+
+#title {
+    width: 970px;
+    position: fixed;
+    left: 25%;
+    background-color: white;
+}
+#titleh1 {
+    padding: 40px 30px 20px;
+    display: inline-block;
+}
+#usertitle {
+    display: inline-block;
+    position: fixed;
+    top: 15px;
+    left: 505px;
+}
+
+
+
+/* INPUT SECTION */
+
+#inputSection {
+    position: fixed;
+    bottom: 0px;
+    left: 25%;
+    background-color: white;
+    width: 910px;
+    padding: 20px 30px 40px;
+}
+#displayName {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#commentInput {
+    width: 635px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+#submitButton {
+    width: 100px;
+    position: fixed;
+    right: 18%;
+    bottom: 45px;
+    color: lightblue;
+    font-size: 25px;
+}
+#submitButton:hover {
+    cursor: pointer;
+}
+
+
+/* COMMENT SECTION */
+
+#commentSection{
+    background-color: darkgray;
+    width: 970px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+    top: 125px;
+}
+.commentBox {
+    width: 930px;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+    position: relative;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#pic {
+    width: 100px;
+    height: 100px;
+}
+#username {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+   color: rgb(150, 150, 150);
+}
+#comment {
+    font-size: 25px;
+    width: 780px;
+    margin-top: 30px;
+}
+#editButton {
+    color: lightblue;
+    position: absolute;
+    right: 100px;
+    top: 15px;
+    font-size: 13px;
+}
+#editButton:hover{
+    cursor: pointer;
+}
+#deleteButton {
+    color: lightblue;
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 13px;
+}
+#deleteButton:hover{
+    cursor: pointer;
+}
+.noDisplay {
+    display: none;
+}
+
+
+/* EDIT */
+.edit{
+    display: flex;
+    align-self: baseline;
+}
+#commentEdit {
+    width: 650px;
+    height: 20px;
+    border-radius: 5px;    
+    display: inline-block;
+    margin-left: 100px;
+}
+#submitEdit{
+    color: lightblue;
+    font-size: 20px;
+    margin-left: 30px;
+}
+#submitEdit:hover{
+    cursor: pointer;
+}
